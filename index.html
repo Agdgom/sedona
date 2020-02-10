@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sedona</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<header class="d-header">
+
+	<nav class="main-nav">
+		<ul class="nav d-flex justify-content-between align-items-center">
+			<li class="nav-item">
+				<a href="#" class="nav-link">Информация</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">Фото и видео</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link"><img src="images/logo.png" alt="Sedona logo"></a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">Карта штата</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">Гостиницы</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+<main class="d-main">
+	<section class="welcome-block d-flex justify-content-center">
+		<img  src="images/intro.png"alt="welcome-block">
+	</section>
+	<section class="description-main">
+		<div class="description-text">
+			<h1 class="justify-content-center">Седона — небольшой городок в Аризоне, Заслуживающий большего</h1>
+			<p class="text-center">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
+		</div>
+	</section>
+	<section class="description d-flex justify-content-center container-fluid">
+		<div class="description-item container-fluid text-center">
+			<h2>Настоящий городок</h2>
+			<span>– №1 –</span>
+			<p>
+				Седона — не аттракцион для туристов,
+				там течет своя жизнь
+			</p>
+		</div>
+		<div class="description-picture">
+			<img src="images/description-picture.png" alt="description-picture">
+		</div>
+	</section>
+	<section class="advantages-block container-fluid d-flex justify-content-around">
+		<div class="advantages-block-item text-center">
+			<h3>Жильё</h3>
+			<p>
+				Рекомендуем пожить в настоящем
+				мотеле, всё как в кино!
+			</p>
+		</div>
+		<div class="advantages-block-item text-center">
+			<h3>Еда</h3>
+			<p>
+				Всегда заказывайте фирменный бургер,
+				Вы не разочаруйтесь!
+			</p>
+		</div>
+		<div class="advantages-block-item text-center">
+			<h3>Сувениры</h3>
+			<p>
+				Не только китайского, но и местного производства!
+			</p>
+		</div>
+	</section>
+	<section class="description d-flex justify-content-center container-fluid">
+		<div class="description-picture">
+			<img src="images/canon.png" alt="description-picture">
+		</div>
+		<div class="description-item text-center">
+			<h2>Там есть мост дьявола</h2>
+			<span>– №2 –</span>
+			<p>
+				Да, по нему можно пройти! Если конечно вы осмелетесь 
+			</p>
+		</div>
+	</section>
+	<section class="advantages d-flex align-items-center justify-content-around">
+		<div class="advantages-item text-center">
+			<h3>Небольшая площадь</h3>
+			<span>– №3 –</span>
+			<p>
+				Все достопремечательности находятся очень близко
+			</p>
+		</div>
+		<div class="advantages-item text-center">
+			<h3>Красивая дорога</h3>
+			<span>– №4 –</span>
+			<p>
+				Ехать в Седону из Лас-Вегаса совсем не скучно!
+			</p>
+		</div>
+		<div class="advantages-item text-center">
+			<h3>Мало туристов</h3>
+			<span>– №5 –</span>
+			<p>
+				Большинство едет в Гранд Каньон и Толпится там
+			</p>
+		</div>
+	</section>
+	<section class="interest-block ">
+		<div class="interest-item">
+			<div class="title text-center">
+				<h2>Заинтересовались?</h2>
+				<p>
+					Укажите предполагамые даты поездки,
+					и мы покажем вам лучшие предложения в седоне
+				</p>				
+			</div>
+
+			<div class="form accordion w-50" id="interest-form">
+			  <div class="card">
+			    <div class="card-header text-center" id="heading">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			          Поиск гостиницы в Седоне
+			        </button>
+			      </h5>
+			    </div>
+			    <div id="collapseOne" class="collapse show" aria-labelledby="heading" data-parent="#interest-form">
+			      <div class="card-body pt-4">
+			        <form action="#" method="post">
+			        	<label for="arrival_date">Дата заезда</label>
+			        	<input type="text" id="arrival_date"> <span></span>
+			        	<br>
+			        	<label for="departure_date">Дата выезда</label>
+			        	<input type="text" id="departure_date"> <span></span>
+			        	<div class="form-btn">
+			        		<button>-</button>
+			        		<button>+</button>
+			        	</div>
+			        </form>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</section>
+	<section class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d839769.499558725!2d-111.829665!3d34.696361!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1581328712998!5m2!1sru!2sru" width="1200" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	</section>
+</main>
+<footer class="d-footer container-fluid d-flex justify-content-around">
+	<div class="footer-item tag-item">
+		<a href="#">#VISITSEDONA</a>
+	</div>
+	<div class="footer-item social">
+		<a href="#" class="social-btn tw"><span>TW</span></a>
+		<a href="#" class="social-btn fb"><span>FB</span></a>
+		<a href="#" class="social-btn yt"><span>YT</span></a>
+	</div>
+	<div class="author">
+		<a href="#">
+			<img src="images/logo_name.png" alt="HTMLACADEMY">
+		</a>
+	</div>
+</footer>
+</div>
+</body>
+</html>
+
+
+
+<!-- <form action="#" method="post">
+	<div class="form-group row">
+	    <label for="arrival_date" class="col-sm-2 col-form-label">Дата заезда</label>
+	    <div class="col-sm-10">
+	      <input type="text" readonly class="form-control-plaintext" id="arrival_date" placeholder="10/02/2020">
+	    </div>
+	</div>
+	<div class="form-group row">
+	    <label for="departure_date" class="col-sm-2 col-form-label">Дата выезда</label>
+	    <div class="col-sm-10">
+	      <input type="text" readonly class="form-control-plaintext" id="departure_date" placeholder="10/02/2020">
+	    </div>
+	</div>
+</form> -->

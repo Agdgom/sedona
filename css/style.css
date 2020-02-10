@@ -1,0 +1,214 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: "PT Sans";
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 21px;
+}
+a{
+	color: #000000;
+}
+h1{
+  font-size: 21px;
+  line-height: 1.238;
+  text-align: center;
+  font-weight: bold;
+}
+.container{
+	box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
+	padding: 0;
+}
+/*HEADER*/
+.main-nav{
+	padding: 0 70px;
+}
+.main-nav .nav-link{
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.8;
+  	text-align: center;
+	padding-top: 0;
+}
+.main-nav .nav-link:hover{
+	color: #81b3d2;
+}
+/*MAIN*/
+.welcome-block img{
+	width: 100%;
+}
+.description-main h1{
+	width: 440px;
+	height: 48px;
+	margin: 10px auto 30px auto;
+}
+.description-main p{
+	font-size: 14px;
+	color: rgb(51, 51, 51);
+	line-height: 1.857;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.description{
+	margin-top: 70px;
+	padding: 0;
+	box-sizing: border-box;
+}
+.description-item{
+	background-color: #81b3d2;
+	margin: 0;
+}
+.description-item h2{
+	font-size: 21px;  
+	font-weight: bold;
+	line-height: 1; 
+	color: #ffffff;
+
+}
+.description-item{
+	padding: 50px 60px 40px 60px;
+}
+.description-item span{
+	display: block;
+	margin: 20px 0;
+	font-weight: bold;
+}
+.description-item p , .description-item span {
+	color: #ffffff;
+	text-align: center;
+}
+.advantages-block-item h3{
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 1;
+}
+.advantages-block-item h3:before{
+	content: " ";
+	display: block;
+	width: 72px;
+	height: 72px;
+	position: relative;
+	margin: 30px 0;
+	left: 39%;
+	background: url('../images/icon-3.png') no-repeat;
+}
+.advantages-block-item{
+	padding: 10px 40px;
+}
+.advantages-block-item:first-child h3:before{
+	background-image: url('../images/icon-1.png');
+}
+.advantages-block-item:last-child h3:before{
+	background-image: url('../images/icon-2.png');
+}
+
+.advantages{
+	padding-left: 0;
+	padding-right: 0;
+	background-color: #eeeeee;
+}
+.advantages-item{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 86px;
+	padding-right: 86px;
+}
+.advantages-item h3{
+	font-size: 21px;
+	
+	font-weight: bold;
+	line-height: 1;
+}
+.advantages-item span{
+	display: block;
+	margin: 18px 0;
+	font-weight: bold;
+}
+
+.interest-block{
+	padding-top: 50px;
+	padding-bottom: 56px;
+	position: relative;
+}
+.form{
+	position: absolute;
+	left: 25%;
+}
+.form .card-header{
+	background-color: #766357;
+}
+.form .btn-link{
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 1.238;
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.form form{
+	padding-left: 40px;
+}
+.form input{
+	outline: none;
+	border: none;
+	width: 60%;
+	height: 40px;
+	margin-left: 21px;
+	margin-bottom: 23px;
+	padding-left: 5px;
+	background-color: #f2f2f2;
+}
+
+.card-body span{
+	display: inline-block;
+	width: 21px;
+	height: 22px;
+	background-image: url("../images/calendar.png");
+}
+
+
+
+
+.map{
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.d-footer{
+	border: 1px solid red;
+	padding-top: 52px;
+	padding-bottom: 20px;
+}
+.tag-item a{
+	  font-size: 21px;
+	  font-family: "PT Sans";
+	  font-weight: bold;
+	  line-height: 1.238;
+	  text-align: center;
+	  text-decoration: none;
+}
+.social-btn{
+	width: 120px;
+	height: 120px;
+	background-color: #81b3d2;
+}
+.social-btn span{
+		width: 120px;
+	height: 120px
+	background-image: url('../images/t.png');
+}
