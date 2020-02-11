@@ -160,13 +160,11 @@ h1{
 	padding-left: 5px;
 	background-color: #f2f2f2;
 }
-
-.card-body span{
-	display: inline-block;
-	width: 21px;
-	height: 22px;
-	background-image: url("../images/calendar.png");
+.amount input{
+	width: 5%;
+	margin: 0 10px;
 }
+
 
 
 
@@ -190,7 +188,6 @@ h1{
 
 
 .d-footer{
-	border: 1px solid red;
 	padding-top: 52px;
 	padding-bottom: 20px;
 }
@@ -202,13 +199,41 @@ h1{
 	  text-align: center;
 	  text-decoration: none;
 }
+
 .social-btn{
-	width: 120px;
-	height: 120px;
+	width: 30px;
+	height: 30px;
 	background-color: #81b3d2;
-}
-.social-btn span{
-		width: 120px;
-	height: 120px
+	display: block;
+	margin-left: 5px;
+	text-align: center;
 	background-image: url('../images/t.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	border-radius: 2px;
+}
+.fb{
+	background-image: url('../images/fb-icon.png');
+}
+.yt{
+	background-image: url('../images/youtube.png');
+}
+.social-btn:hover{
+	background-color: #669ec0;
+}
+
+.author a{
+	width: 115px;
+	height: 41px;
+	display: block;
+	background: url("../images/logo_name.png") no-repeat;
+}
+.author a:hover{
+	background: url("../images/logo_name_hover.png") no-repeat;
+}
+
+
+
+@media screen and (max-width: 768px){
+
 }
