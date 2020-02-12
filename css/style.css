@@ -53,11 +53,15 @@ h1{
 .description{
 	margin-top: 70px;
 	padding: 0;
-	box-sizing: border-box;
+}
+.description-picture img{
+	width: 100%;
+	height: auto;
 }
 .description-item{
 	background-color: #81b3d2;
 	margin: 0;
+	width: 33.3%;
 }
 .description-item h2{
 	font-size: 21px;  
@@ -89,8 +93,8 @@ h1{
 	width: 72px;
 	height: 72px;
 	position: relative;
-	margin: 30px 0;
-	left: 39%;
+	margin: 60px auto 32px auto;
+	
 	background: url('../images/icon-3.png') no-repeat;
 }
 .advantages-block-item{
@@ -131,6 +135,10 @@ h1{
 	padding-bottom: 56px;
 	position: relative;
 }
+
+.interest-block .title{
+	margin-bottom: 50px;
+}
 .form{
 	position: absolute;
 	left: 25%;
@@ -164,29 +172,57 @@ h1{
 	width: 5%;
 	margin: 0 10px;
 }
-
-
-
-
+.amount label{
+	margin-top: 10px;
+	margin-right: 41px;
+}
+.icon-minus{
+	outline: none;
+	border: none;
+	display: inline-block;
+	width: 20px;
+	height: 30px;
+	background-color: #f2f2f2;
+	background-image: url("../images/-.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.icon-plus{
+	outline: none;
+	border: none;
+	display: inline-block;
+	width: 20px;
+	height: 30px;
+	background-color: #f2f2f2;
+	background-image: url("../images/+	.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	margin-right: 53px;
+}
+.icon-plus:focus,
+.icon-minus:focus{
+	outline: none;
+}
+.amount input{
+	display: inline-block;
+	height:  30px;
+	margin: 0;
+	text-align: center;
+}
+.form button[type="submit"]{
+	border: none;
+	outline: none;
+	background-color: #81b3d2;
+	margin-top: 54px;
+	padding: 17px 192px 12px 192px;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: bold;
+}
 
 .map{
 	overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .d-footer{
 	padding-top: 52px;
 	padding-bottom: 20px;
@@ -235,5 +271,21 @@ h1{
 
 
 @media screen and (max-width: 768px){
+.description{
+	flex-direction: column;
+}
+.description-item{
+	width: 100%;
+}
+.main-nav{
+	padding: 0;
+}
+
+.advantages-item{
+	
+	
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
 }
