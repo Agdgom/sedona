@@ -268,8 +268,6 @@ h1{
 	background: url("../images/logo_name_hover.png") no-repeat;
 }
 
-
-
 @media screen and (max-width: 768px){
 .description{
 	flex-direction: column;
@@ -282,8 +280,6 @@ h1{
 }
 
 .advantages-item{
-	
-	
 	padding-left: 20px;
 	padding-right: 20px;
 }
