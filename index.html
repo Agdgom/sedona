@@ -6,6 +6,7 @@
 	<title>Sedona</title>
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -24,10 +25,10 @@
 				<a href="#" class="nav-link">Фото и видео</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link"><img src="images/logo.png" alt="Sedona logo"></a>
+				<a href="#" class="logo nav-link"><img src="images/logo.png" alt="Sedona logo"></a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link">Карта штата</a>
+				<a href="#map" class="nav-link">Карта штата</a>
 			</li>
 			<li class="nav-item">
 				<a href="#" class="nav-link">Гостиницы</a>
@@ -55,7 +56,7 @@
 			</p>
 		</div>
 		<div class="description-picture">
-			<img src="images/description-picture.png" alt="description-picture">
+			<img class="image-fluid" src="images/description-picture.png" alt="description-picture">
 		</div>
 	</section>
 	<section class="advantages-block container-fluid d-flex justify-content-around">
@@ -82,7 +83,7 @@
 	</section>
 	<section class="description d-flex justify-content-center container-fluid">
 		<div class="description-picture">
-			<img src="images/canon.png" alt="description-picture">
+			<img class="image-fluid" src="images/canon.png" alt="description-picture">
 		</div>
 		<div class="description-item text-center">
 			<h2>Там есть мост дьявола</h2>
@@ -115,7 +116,7 @@
 			</p>
 		</div>
 	</section>
-	<section class="interest-block ">
+	<section class="interest-block">
 		<div class="interest-item">
 			<div class="title text-center">
 				<h2>Заинтересовались?</h2>
@@ -138,26 +139,28 @@
 			      <div class="card-body pt-4">
 			        <form class="search-form search-form-visible" action="#" method="post">
 			            <label class="entry" for="date-of-entry">
-			              Дата заезда:
-			              <a class="date-of-entry-cal" href="#"><span class="icon-calendar"></span></a>
+			              Дата заезда:          
 			            </label>
 			            <input type="date" name="date-of-entry"  id="date-of-entry">
 			            <label class="departure" for="date-of-departure">
-			              Дата выезда:
-			              <a class="date-of-departure-cal" href="#"><span class="icon-calendar"></span></a>
+			              Дата выезда:		              
 			            </label>
 			            <input type="date" name="date-of-departure"  id="date-of-departure">
 			            <div class="amount d-flex align-items-center">
-			              <label for="amount-of-adults">Взрослые:</label>
-			                <button class="icon-minus" type="button" name="minus-adult"></button>
-			                <input type="text" name="amount-of-adults" value="2" id="amount-of-adults" readonly>
-			                <button class="icon-plus" type="button" name="plus-adult"></button>
-			              <label for="amount-of-children">Дети:</label>
-			                <button class="icon-minus" type="button" name="minus-children"></button>
-			                <input type="text" name="amount-of-children" value="0" id="amount-of-children" readonly>
-			                <button class="icon-plus" type="button" name="plus-children"></button>
+			            	<div class="adults d-flex align-items-center">
+				              <label for="amount-of-adults">Взрослые:</label>
+				                <button class="icon-minus" type="button" name="minus-adult"></button>
+				                <input type="text" name="amount-of-adults" value="2" id="amount-of-adults" readonly>
+				                <button class="icon-plus" type="button" name="plus-adult"></button>
+				            </div>
+				            <div class="children d-flex align-items-center">
+				              <label for="amount-of-children">Дети:</label>
+				                <button class="icon-minus" type="button" name="minus-children"></button>
+				                <input type="text" name="amount-of-children" value="0" id="amount-of-children" readonly>
+				                <button class="icon-plus" type="button" name="plus-children"></button>
+				            </div>
 			            </div>
-			            <button type="submit">Найти</button>
+			            <button type="button" class="search-btn">Найти</button>
 			        </form>
 			      </div>
 			    </div>
@@ -165,7 +168,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="map">
+	<section class="map" id="map">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d839769.499558725!2d-111.829665!3d34.696361!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1581328712998!5m2!1sru!2sru" width="1200" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 	</section>
 </main>
@@ -180,11 +183,12 @@
 	</div>
 	<div class="author">
 		<a href="#">
-			
+			HTML Academy
 		</a>
 	</div>
 </footer>
 </div>
+<script src="js/main.js"></script>
 </body>
 </html>
 
