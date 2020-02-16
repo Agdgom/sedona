@@ -227,6 +227,9 @@ h1{
 .map{
 	overflow: hidden;
 }
+.map iframe{
+	border: none;
+}
 .d-footer{
 	padding-top: 52px;
 	padding-bottom: 20px;
