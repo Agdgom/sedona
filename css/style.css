@@ -1,20 +1,20 @@
 *{
-	padding: 0;
-	margin: 0;
-	text-transform: uppercase;
 	font-family: "PT Sans";
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 21px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
 }
 a{
 	color: #000000;
 }
 h1{
   font-size: 21px;
+  font-weight: bold;
   line-height: 1.238;
   text-align: center;
-  font-weight: bold;
 }
 .container{
 	box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
@@ -22,8 +22,8 @@ h1{
 }
 /*HEADER*/
 .main-nav{
-	padding: 0 70px;
 	height: 60px;
+	padding: 0 70px;
 }
 .logo{
 	position: relative;
@@ -32,75 +32,65 @@ h1{
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 1.8;
-  	text-align: center;
 	padding: 0;
+  	text-align: center;
 }
 .main-nav .nav-link:hover{
 	color: #81b3d2;
 }
 /*MAIN*/
+
+/*WELCOME BLOCK*/
 .welcome-block img{
 	width: 100%;
 }
+/*DESCRPTION*/
 .description-main h1{
-	width: 440px;
 	height: 48px;
 	margin: 10px auto 30px auto;
+	width: 440px;
 }
 .description-main p{
+	color: #333333;
 	font-size: 14px;
-	color: rgb(51, 51, 51);
 	line-height: 1.857;
-	text-align: center;
 	margin-bottom: 30px;
+	text-align: center;
+}
+.description-picture img{
+	height: auto;
+	width: 100%;
 }
 .description{
 	margin-top: 70px;
 	padding: 0;
 }
-.description-picture img{
-	width: 100%;
-	height: auto;
-}
 .description-item{
 	background-color: #81b3d2;
 	margin: 0;
+	padding: 50px 60px 40px 60px;
 	width: 33.3%;
 }
 .description-item h2{
+	color: #ffffff;
 	font-size: 21px;  
 	font-weight: bold;
 	line-height: 1; 
-	color: #ffffff;
 
 }
-.description-item{
-	padding: 50px 60px 40px 60px;
-}
-.description-item span{
-	display: block;
-	margin: 20px 0;
-	font-weight: bold;
-}
-.description-item p , .description-item span {
+.description-item p, 
+.description-item span 
+{
 	color: #ffffff;
 	text-align: center;
 }
-.advantages-block-item h3{
-	font-size: 21px;
-	font-weight: bold;
-	line-height: 1;
-}
-.advantages-block-item h3:before{
-	content: " ";
+.description-item span{
 	display: block;
-	width: 72px;
-	height: 72px;
-	position: relative;
-	margin: 60px auto 32px auto;
-	
-	background: url('../images/icon-3.png') no-repeat;
+	font-weight: bold;
+	margin: 20px 0;
 }
+
+/*ADVANTAGES BLOCK*/
 .advantages-block-item{
 	padding: 10px 40px;
 }
@@ -110,11 +100,25 @@ h1{
 .advantages-block-item:last-child h3:before{
 	background-image: url('../images/icon-2.png');
 }
+.advantages-block-item h3{
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 1;
+}
+.advantages-block-item h3:before{
+	background: url('../images/icon-3.png') no-repeat;
+	content: " ";
+	display: block;
+	height: 72px;
+	margin: 60px auto 32px auto;
+	position: relative;
+	width: 72px;
+}
 
 .advantages{
+	background-color: #eeeeee;
 	padding-left: 0;
 	padding-right: 0;
-	background-color: #eeeeee;
 }
 .advantages-item{
 	margin-top: 50px;
@@ -124,16 +128,15 @@ h1{
 }
 .advantages-item h3{
 	font-size: 21px;
-	
 	font-weight: bold;
 	line-height: 1;
 }
 .advantages-item span{
 	display: block;
-	margin: 18px 0;
 	font-weight: bold;
+	margin: 18px 0;
 }
-
+/*INTEREST BLOCK*/
 .interest-block{
 	padding-top: 50px;
 	padding-bottom: 56px;
@@ -151,11 +154,11 @@ h1{
 	background-color: #766357;
 }
 .form .btn-link{
+	color: #ffffff;
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 1.238;
 	text-align: center;
-	color: #ffffff;
 	text-decoration: none;
 }
 
@@ -163,45 +166,41 @@ h1{
 	padding-left: 40px;
 }
 .search-form input{
-	outline: none;
-	border: none;
-	width: 60%;
-	height: 40px;
-	margin-left: 21px;
-	margin-bottom: 23px;
-	padding-left: 5px;
 	background-color: #f2f2f2;
-}
-.amount input{
-	width: 10%;
-	margin: 0 10px;
+	border: none;
+	height: 40px;
+	margin-bottom: 23px;
+	margin-left: 21px;
+	padding-left: 5px;
+	outline: none;
+	width: 60%;
 }
 .amount label{
 	margin-top: 10px;
 	margin-right: 41px;
 }
-.icon-minus{
-	outline: none;
-	border: none;
-	display: inline-block;
-	width: 20px;
-	height: 30px;
-	background-color: #f2f2f2;
-	background-image: url("../images/-.png");
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
+.amount input{
+	margin: 0 10px;
+	width: 10%;
 }
 .icon-plus{
-	outline: none;
+	background-image: url("../images/+	.png");
+	margin-right: 53px;
+}
+.icon-minus{
+	background-image: url("../images/-.png");
+}
+.icon-plus,
+.icon-minus
+{
+	background-position: 50% 50%;
+	background-color: #f2f2f2;
+	background-repeat: no-repeat;
 	border: none;
 	display: inline-block;
-	width: 20px;
 	height: 30px;
-	background-color: #f2f2f2;
-	background-image: url("../images/+	.png");
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	margin-right: 53px;
+	outline: none;
+	width: 20px;
 }
 .icon-plus:focus,
 .icon-minus:focus{
@@ -214,46 +213,47 @@ h1{
 	text-align: center;
 }
 .form .search-btn{
-	border: none;
-	outline: none;
+	color: #ffffff;
 	background-color: #81b3d2;
+	border: none;
+	font-weight: bold;
 	margin-top: 54px;
+	outline: none;
 	padding: 17px 192px 12px 192px;
 	text-transform: uppercase;
-	color: #ffffff;
-	font-weight: bold;
 }
-
+/*MAP*/
 .map{
 	overflow: hidden;
 }
 .map iframe{
 	border: none;
 }
+/*FOOTER*/
 .d-footer{
 	padding-top: 52px;
 	padding-bottom: 20px;
 }
 .tag-item a{
-	  font-size: 21px;
-	  font-family: "PT Sans";
-	  font-weight: bold;
-	  line-height: 1.238;
-	  text-align: center;
-	  text-decoration: none;
+	font-size: 21px;
+	font-family: "PT Sans";
+	font-weight: bold;
+	line-height: 1.238;
+	text-align: center;
+	text-decoration: none;
 }
 
 .social-btn{
-	width: 30px;
-	height: 30px;
 	background-color: #81b3d2;
+	background-image: url('../images/t.png');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-radius: 2px;
 	display: block;
+	height: 30px;
 	margin-left: 5px;
 	text-align: center;
-	background-image: url('../images/t.png');
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	border-radius: 2px;
+	width: 30px;
 }
 .fb{
 	background-image: url('../images/fb-icon.png');
@@ -266,11 +266,11 @@ h1{
 }
 
 .author a{
-	width: 115px;
-	height: 41px;
-	display: block;
 	background: url("../images/logo_name.png") no-repeat;
+	display: block;
 	font-size: 0;
+	height: 41px;
+	width: 115px;
 }
 .author a:hover{
 	background: url("../images/logo_name_hover.png") no-repeat;
@@ -285,7 +285,6 @@ h1{
 }
 .main-nav{
 	padding: 0 10px;
-	
 }
 .advantages-item{
 	padding-left: 20px;
@@ -297,18 +296,13 @@ h1{
 .form .search-btn{
 	padding: 17px 40px 12px 40px;
 }
-
 .search-form input{
 	width: 100%;
 }
 .amount input{
 	width: 10%;
 }
-.main-nav .nav{
-	
-}
 .main-nav .nav-link{
-
 	font-size: 13px;
 }
 }
