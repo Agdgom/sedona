@@ -10,12 +10,25 @@
 a{
 	color: #000000;
 }
+ul{
+	list-style-type: none;
+}
 h1{
   font-size: 21px;
   font-weight: bold;
   line-height: 1.238;
   text-align: center;
 }
+h2{
+  font-size: 16px;
+  font-family: "PT Sans";
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.313;
+  text-align: left;
+}
+
 .container{
 	box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
 	padding: 0;
@@ -38,6 +51,12 @@ h1{
 .main-nav .nav-link:hover{
 	color: #81b3d2;
 }
+.main-nav .nav-link:active{
+	color: #b2b2b2;
+}
+.nav-item .active{
+	color: #9b8d84;
+}
 /*MAIN*/
 
 /*WELCOME BLOCK*/
@@ -46,6 +65,7 @@ h1{
 }
 /*DESCRPTION*/
 .description-main h1{
+	font-size: 21px;
 	height: 48px;
 	margin: 10px auto 30px auto;
 	width: 440px;
@@ -75,8 +95,7 @@ h1{
 	color: #ffffff;
 	font-size: 21px;  
 	font-weight: bold;
-	line-height: 1; 
-
+	line-height: 1;
 }
 .description-item p, 
 .description-item span 
@@ -145,6 +164,10 @@ h1{
 
 .interest-block .title{
 	margin-bottom: 50px;
+
+}
+.interest-block .title h2{
+	text-align: center;
 }
 .form{
 	position: absolute;
@@ -276,6 +299,185 @@ h1{
 	background: url("../images/logo_name_hover.png") no-repeat;
 }
 
+
+
+
+
+
+/*Sedona Hotels*/
+
+.filters-block{
+	padding: 2% 5%;
+	background-image: url("../images/filtersbg.png");
+	background-size: cover;
+	color: #ffffff;
+}
+.filters-block h2{
+	color: #ffffff;
+}
+.list input[type="checkbox"]{
+	display: none;
+}
+.list label{
+	cursor: pointer;
+}
+.list li:before{
+	display: inline-block;
+	content: " ";
+	width: 24px;
+	height: 24px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	position: relative;
+	top: 5px;
+	cursor: pointer;
+}
+.cost-control{
+	border: 1.5px solid #ffffff;
+	border-radius: 5px;
+	padding: 11px 24px 0px 24px;
+}
+.cost-control input[type="text"]{
+	width: 70px;
+	border: none;
+	background: none;
+	color: #ffffff;
+	outline: none;
+}
+
+.max-cost{
+	border-left: 2px solid #ffffff;
+	padding-left: 22px;
+}
+.btn-show{
+	border: 1.5px solid #ffffff;
+	border-radius: 3px;
+	color: #ffffff;
+	text-align: center;
+	padding: 8px 30px;
+	background:none;  
+	font-size: 14px;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+.btn-show:hover{
+	background-color: #ffffff;
+	color: #000000;
+}
+.results-header{
+	padding: 30px 73px;
+}
+.results-header h2 {
+  font-size: 21px;
+  font-family: "PT Sans";
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.238;
+  text-align: left;
+  margin-right: 40px;
+}
+.sort-nav h3{
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 1.5;
+  text-align: left;
+  margin-right: 35px;
+}
+.sort-nav li{
+	margin-right: 30px;
+}
+.sort-nav .active{
+	border: none;
+	color: #81b3d2;
+}
+.sort-nav li > button{
+	border: none;
+	border-bottom: 1px dotted #81b3d2;
+	outline: none;
+	background: none;
+	color: #c6c6c6;
+	font-size: 14px;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+.sort-nav li > button:hover{
+	color: #92bdd8;
+}
+.sort-nav li > button:active{
+	color: #444444;
+	border: none;
+}
+.results-main{
+	border-top: 1px solid #e5e5e5;
+}
+.results-item{
+	border-bottom: 1px solid #e5e5e5;
+	padding: 30px 0px 30px 73px;
+}
+.results-item div{
+	margin-left: 25px;
+}
+.results-item .item-title a{
+	font-size: 21px;
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.238;
+	text-decoration: none;
+}
+.results-item .item-title a:hover{
+	color: #a3c7de;
+}
+.results-item .item-title a:active{
+	color: #b2b2b2;
+}
+.results-item span{
+	font-size: 14px;
+  	color: #333333;
+  	text-transform: uppercase;
+  	line-height: 1.5;
+}
+.results-item .item-type{
+	border: 1px solid red;
+}
+.btn-read-more,
+.btn-reserved
+{
+	color: #ffffff;
+	font-size: 14px;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	line-height: 1.5;
+  	padding: 3px 13px;
+  	border: none;
+  	background: none;
+}
+.btn-read-more:focus,
+.btn-reserved:focus{
+	outline: none;
+}
+.btn-read-more{
+	background-color: #81b3d2;
+}
+.btn-read-more:hover{
+	background-color: #669ec0;
+}
+.btn-read-more:active{
+	color: #629fc2;
+	background-color: #5496bd;
+}
+.btn-reserved{
+	background-color: #766357;
+}
+.btn-reserved:hover{
+	background-color: #604e43;
+}
+.btn-reserved:active{
+	color: #857871;
+	background-color: #503e33;
+}
 @media screen and (max-width: 768px){
 .description{
 	flex-direction: column;
