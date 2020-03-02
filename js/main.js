@@ -1,10 +1,4 @@
 /* index.html*/
-let linkToPage = 'sedona-hotels.html';
-
-let searchBtn = document.querySelector(".search-btn");
-searchBtn.addEventListener('click', function(){
-    window.open(linkToPage);
-});
 let amountOfAdultsMinus = document.querySelectorAll('.icon-minus')[0],
     amountOfAdultsPlus = document.querySelectorAll('.icon-plus')[0],
     amountOfAdultsValue = document.querySelector('#amount-of-adults');

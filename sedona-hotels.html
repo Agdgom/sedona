@@ -7,9 +7,6 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalize.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -24,7 +21,7 @@
 				<a href="#" class="nav-link">Фото и видео</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="logo nav-link"><img src="images/logo.png" alt="Sedona logo"></a>
+				<a href="index.html" class="logo nav-link"><img src="images/logo.png" alt="Sedona logo"></a>
 			</li>
 			<li class="nav-item">
 				<a href="#map" class="nav-link">Карта штата</a>
@@ -40,16 +37,19 @@
 		<div class="infrastucture">
 			<h2>Инфраструктура:</h2>
 			<ul class="list">
-				<li>
+				<li class="list-item checked">
+					
 					<input type="checkbox" id="pool">
 					<label for="pool">Бассейн</label>
 				</li>
-				<li>
+				<li class="list-item">
+					
 					<input type="checkbox" id="parking">
 					<label for="parking">Парковка</label>
 				</li>
-				<li>
-					<input type="checkbox" id="WiFi">
+				<li class="list-item">
+					
+					<input type="checkbox" id="WiFi" checked>
 					<label for="WiFi">WI-FI</label>
 				</li>
 			</ul>
@@ -57,15 +57,18 @@
 		<div class="house-type">
 			<h2>Тип жилья:</h2>
 			<ul class="list">
-				<li>
-					<input type="checkbox" id="hotel">
+				<li class="list-item">
+					
+					<input type="checkbox" id="hotel" checked>
 					<label for="hotel">Гостиница</label>
 				</li>
-				<li>
+				<li class="list-item">
+					
 					<input type="checkbox" id="motel">
 					<label for="motel">Мотель</label>
 				</li>
-				<li>
+				<li class="list-item">
+					
 					<input type="checkbox" id="apartments">
 					<label for="apartments">Апартаменты</label>
 				</li>
@@ -76,15 +79,16 @@
 			<div class="cost-range">
 				<div class="cost-control">
 					<label for="min-cost">ОТ</label>
-					<input type="text" id="min-cost" value="0">
-					<label class="max-cost" for="max-cost">ДО</label>
-					<input type="text" id="max-cost" value="5000">
+					<input type="text" id="min-cost" value="0" maxlength="4" oninput="replacer(this)">
+					<label class="max-cost" for="max-cost" oninput="replacer(this)">ДО</label>
+					<input type="text" id="max-cost" maxlength="4" value="5000" oninput="replacer(this)">
 				</div>
 	        	<div class="scale">
 	            	<div class="bar"></div>
 	          	</div>
 	          	<div class="range-toggle range-toggle-min"></div>
 	          	<div class="range-toggle range-toggle-max"></div>
+	          	
 	          	<button class="btn-show">Показать</button>
 	        </div>
 		</div>
@@ -104,13 +108,16 @@
 		<div class="results-main">
 			<div class="results-item d-flex">
 				<img src="images/amara.png" alt="HOUSe">
-				<div>
+				<div class="results-item-content">
 					<h2 class="item-title"><a href="#">Amara Resort & SPA</a></h2>
-					<span class="item-type">Гостиница</span>
-					<span class="item-cost">ОТ 4000 Р.</span>
-					<br>
-					<button class="btn-read-more">Подробнее</button>
-					<button class="btn-reserved">Забронировать</button>
+					<div class="container-type-cost d-flex">
+						<span class="item-type">Гостиница</span>
+						<span class="item-cost">ОТ 4000 Р.</span>
+					</div>
+					<div>
+						<button class="btn-read-more">Подробнее</button>
+						<button class="btn-reserved">Забронировать</button>
+					</div>
 				</div>
 				<div class="item-rating">
 					<span>Рейтинг 8.5</span>
@@ -118,27 +125,33 @@
 			</div>
 			<div class="results-item d-flex">
 				<img src="images/desert.png" alt="HOUSe">
-				<div>
+				<div class="results-item-content">
 					<h2 class="item-title"><a href="#">Desert Qual Inn</a></h2>
-					<span class="item-type">Мотель</span>
-					<span class="item-cost">ОТ 5000 Р.</span>
-					<br>
-					<button class="btn-read-more">Подробнее</button>
-					<button class="btn-reserved">Забронировать</button>
+					<div class="container-type-cost d-flex">
+						<span class="item-type">Мотель</span>
+						<span class="item-cost">ОТ 3000 Р.</span>
+					</div>
+					<div>
+						<button class="btn-read-more">Подробнее</button>
+						<button class="btn-reserved">Забронировать</button>
+					</div>
 				</div>
-				<div class="item-rating">
+				<div class="item-rating"> 
 					<span>Рейтинг 8.9</span>
 				</div>	
 			</div>
 			<div class="results-item d-flex">
 				<img src="images/villas.png" alt="HOUSe">
-				<div>
+				<div class="results-item-content">
 					<h2 class="item-title"><a href="#">Villas at Poco Diablo</a></h2>
-					<span class="item-type">Апартаменты</span>
-					<span class="item-cost">ОТ 2000 Р.</span>
-					<br>
-					<button class="btn-read-more">Подробнее</button>
-					<button class="btn-reserved">Забронировать</button>
+					<div class="container-type-cost d-flex">
+						<span class="item-type">Апартаменты</span>
+						<span class="item-cost">ОТ 2000 Р.</span>
+					</div>
+					<div>
+						<button class="btn-read-more">Подробнее</button>
+						<button class="btn-reserved">Забронировать</button>
+					</div>
 				</div>
 				<div class="item-rating">
 					<span>Рейтинг 9.2</span>
@@ -170,6 +183,9 @@
 
 
 
-	
+<script src="js/sedona-hotels.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>

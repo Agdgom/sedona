@@ -184,7 +184,12 @@ h2{
 	text-align: center;
 	text-decoration: none;
 }
-
+.form .card-header:hover{
+	background-color: #604e43;
+}
+.form .search-btn-hotels:active{
+	color: #695950;
+}
 .form .search-form{
 	padding-left: 40px;
 }
@@ -198,6 +203,12 @@ h2{
 	outline: none;
 	width: 60%;
 }
+.search-form input[type="date"]:hover{
+	background-color: #ebebeb;
+}
+.search-form input[type="date"]:focus{
+	background-color: #ffffff;
+}
 .amount label{
 	margin-top: 10px;
 	margin-right: 41px;
@@ -207,23 +218,28 @@ h2{
 	width: 10%;
 }
 .icon-plus{
-	background-image: url("../images/+	.png");
 	margin-right: 53px;
-}
-.icon-minus{
-	background-image: url("../images/-.png");
 }
 .icon-plus,
 .icon-minus
 {
-	background-position: 50% 50%;
 	background-color: #f2f2f2;
-	background-repeat: no-repeat;
 	border: none;
+	color: #a9a9a9;
 	display: inline-block;
+	font-size: 24px;
+	font-weight: bold;
 	height: 30px;
 	outline: none;
 	width: 20px;
+}
+.icon-plus:hover,
+.icon-minus:hover{
+	color: #000000;
+}
+.icon-plus:active,
+.icon-minus:active{
+	color: #81b3d2;
 }
 .icon-plus:focus,
 .icon-minus:focus{
@@ -236,14 +252,25 @@ h2{
 	text-align: center;
 }
 .form .search-btn{
-	color: #ffffff;
 	background-color: #81b3d2;
 	border: none;
-	font-weight: bold;
 	margin-top: 54px;
 	outline: none;
 	padding: 17px 192px 12px 192px;
+	
+}
+.form .search-btn > a{
+	color: #ffffff;
+	font-weight: bold;
 	text-transform: uppercase;
+	text-decoration: none;
+}
+.form .search-btn:hover{
+	background-color: #669ec0;
+}
+.form .search-btn:focus{
+	background-color: #5496bd;
+	color: #88b6d1;
 }
 /*MAP*/
 .map{
@@ -288,6 +315,9 @@ h2{
 	background-color: #669ec0;
 }
 
+.social-btn:active{
+	background-color: #5496bd;
+}
 .author a{
 	background: url("../images/logo_name.png") no-repeat;
 	display: block;
@@ -298,9 +328,6 @@ h2{
 .author a:hover{
 	background: url("../images/logo_name_hover.png") no-repeat;
 }
-
-
-
 
 
 
@@ -315,54 +342,99 @@ h2{
 .filters-block h2{
 	color: #ffffff;
 }
-.list input[type="checkbox"]{
+.list-item label{
+	cursor: pointer;
+	
+}
+.list-item input[type="checkbox"]{
 	display: none;
 }
-.list label{
-	cursor: pointer;
-}
-.list li:before{
+
+.list-item label:before{
 	display: inline-block;
-	content: " ";
-	width: 24px;
-	height: 24px;
-	border: 2px solid #ffffff;
-	border-radius: 2px;
+	content: "";
 	position: relative;
 	top: 5px;
 	cursor: pointer;
+	font-size: 26px;
+	border-radius: 3px;
+	border: 1.5px solid #ffffff;
+	width: 21px;
+	height: 22px;
+	font-weight: bold;
+	margin-right: 15px;
 }
+.list-item input[type="checkbox"]:checked + label:before {
+	content: "\2714";
+	font-size: 26px;
+	
+}
+
 .cost-control{
 	border: 1.5px solid #ffffff;
 	border-radius: 5px;
+	margin-bottom: 13px;
 	padding: 11px 24px 0px 24px;
 }
 .cost-control input[type="text"]{
-	width: 70px;
 	border: none;
 	background: none;
 	color: #ffffff;
 	outline: none;
+	width: 70px;
 }
 
 .max-cost{
 	border-left: 2px solid #ffffff;
 	padding-left: 22px;
 }
+.scale{
+	background-color: #8c8080;
+	height: 2px;
+	position: relative;
+	margin-bottom: 20px;
+}
+.bar{
+	background-color: #ffffff;	
+	height: 2px;
+	width: 100%;
+}
+.range-toggle{
+	background-color: #b1b1b1;
+	border: 7px solid #ffffff;
+	border-radius: 50%;
+	bottom: 36px;
+	cursor: pointer;
+	display: inline-block;
+	height: 18px;
+	position: relative;
+	width: 18px;
+	
+}
+.range-toggle:hover{
+
+}
+.range-toggle-max{
+	left: 85%;
+}
 .btn-show{
+	color: #ffffff;
+	background:none;  
 	border: 1.5px solid #ffffff;
 	border-radius: 3px;
-	color: #ffffff;
-	text-align: center;
-	padding: 8px 30px;
-	background:none;  
 	font-size: 14px;
-	line-height: 1.5;
+	padding: 8px 30px;
+	text-align: center;
 	text-transform: uppercase;
+	line-height: 1.5;
+	margin-left: 20px;
 }
 .btn-show:hover{
 	background-color: #ffffff;
 	color: #000000;
+}
+.btn-show:active{
+	outline: none;
 }
 .results-header{
 	padding: 30px 73px;
@@ -416,8 +488,8 @@ h2{
 	border-bottom: 1px solid #e5e5e5;
 	padding: 30px 0px 30px 73px;
 }
-.results-item div{
-	margin-left: 25px;
+.results-item .results-item-content{
+	padding-left: 30px;
 }
 .results-item .item-title a{
 	font-size: 21px;
@@ -434,18 +506,26 @@ h2{
 	color: #b2b2b2;
 }
 .results-item span{
+	display: block;
 	font-size: 14px;
   	color: #333333;
+  	margin-bottom: 20px;
+  	margin-right: 13px;
   	text-transform: uppercase;
   	line-height: 1.5;
 }
-.results-item .item-type{
-	border: 1px solid red;
+.results-item:first-child span{
+	margin-right: 30px;
 }
-.btn-read-more,
-.btn-reserved
+.results-item:nth-child(2) span{
+	margin-right: 54px;
+}
+
+.results-item .btn-read-more,
+.results-item .btn-reserved
 {
 	color: #ffffff;
+	display: inline-block;
 	font-size: 14px;
   	font-weight: bold;
   	text-transform: uppercase;
@@ -454,30 +534,66 @@ h2{
   	border: none;
   	background: none;
 }
-.btn-read-more:focus,
-.btn-reserved:focus{
+.results-item .btn-read-more:focus,
+.results-item .btn-reserved:focus{
 	outline: none;
 }
-.btn-read-more{
+.results-item .btn-read-more{
 	background-color: #81b3d2;
 }
-.btn-read-more:hover{
+.results-item .btn-read-more:hover{
 	background-color: #669ec0;
 }
-.btn-read-more:active{
+.results-item .btn-read-more:active{
 	color: #629fc2;
 	background-color: #5496bd;
 }
-.btn-reserved{
+.results-item .btn-reserved{
 	background-color: #766357;
 }
-.btn-reserved:hover{
+.results-item .btn-reserved:hover{
 	background-color: #604e43;
 }
-.btn-reserved:active{
-	color: #857871;
+.results-item .btn-reserved:active{
 	background-color: #503e33;
+	color: #857871;
 }
+
+.results-item .item-rating{
+	margin-left: auto;
+	position:  relative;
+	width: 140px;
+}
+.item-rating span{
+	background-color: #f2f2f2;
+	display: block;
+	position: absolute;
+	bottom: -21%;
+	width: 60%;
+}
+.results-item .item-rating:before{
+	background: url("../images/star.png");
+	content: " ";
+	display: block;
+	height: 17px;
+}
+.results-item:nth-child(1) .item-rating:before{
+	width: 70px;
+}
+
+.results-item:nth-child(2) .item-rating:before{
+	width: 55px;
+}
+.results-item:nth-child(3) .item-rating:before{
+	width: 35px;
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 768px){
 .description{
 	flex-direction: column;
@@ -498,6 +614,7 @@ h2{
 .form .search-btn{
 	padding: 17px 40px 12px 40px;
 }
+
 .search-form input{
 	width: 100%;
 }
